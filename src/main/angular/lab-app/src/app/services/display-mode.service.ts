@@ -18,9 +18,9 @@ export class DisplayModeService {
 
   updateMode() {
     let width = window.innerWidth;
-    if (width >= 1052) {
+    if (width >= 1041) {
       this.mode = 'desktop';
-    } else if (width > 840) {
+    } else if (width > 710) {
       this.mode = 'tablet';
     } else {
       this.mode = 'mobile';

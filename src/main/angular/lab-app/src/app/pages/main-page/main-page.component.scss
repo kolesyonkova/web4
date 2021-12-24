@@ -14,8 +14,8 @@
 
 // Breakpoints
 $mobile: 0;
-$tablet: 840px;
-$desktop: 1052px;
+$tablet: 710px;
+$desktop: 1040px;
 
 // Mixins
 @mixin shrink-limit($width) {
@@ -38,14 +38,14 @@ $desktop: 1052px;
 }
 
 #table-panel {
-  @include shrink-limit(250px);
+  @include shrink-limit(150px);
   flex-grow: 10000;
 }
 
 // Desktop
 @media screen and (min-width: $desktop) {
   #manual-input-panel {
-    @include shrink-limit(300px);
+    @include shrink-limit(200px);
     flex-grow: 1;
   }
 }
@@ -56,7 +56,7 @@ $desktop: 1052px;
     flex-basis: 100%; // forces table-panel be screen-wide on next row
   }
   #manual-input-panel {
-    @include shrink-limit(250px);
+    @include shrink-limit(145px);
     flex-grow: 1;
   }
 }
